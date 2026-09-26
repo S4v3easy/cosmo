@@ -54,6 +54,6 @@ export function extractS3BucketName(opts: S3StorageOptions) {
   return url.hostname.split('.')[0];
 }
 
-export function isVirtualHostStyleUrl(url: URL) {
+function isVirtualHostStyleUrl(url: URL) {
   return url.hostname.split('.').length > 2;
 }
